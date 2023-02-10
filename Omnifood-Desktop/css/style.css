@@ -1,0 +1,670 @@
+/*************************/
+/* Herder */
+/*************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+/*************************/
+/* Mobile nav button */
+/*************************/
+
+.navMobileBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.btnNavMobile {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.navMobileBtn [name="close"] {
+  display: none;
+}
+/*************************/
+/* Navigation */
+/*************************/
+
+.mainNavList {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.MainNavLink:link,
+.MainNavLink:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.MainNavLink:hover,
+.MainNavLink:active {
+  color: #cf711f;
+}
+
+.MainNavLink.navCTA:link,
+.MainNavLink.navCTA:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.MainNavLink.navCTA:hover,
+.MainNavLink.navCTA:active {
+  background-color: #cf711f;
+}
+/*************************/
+/* Hero Section */
+/*************************/
+
+.sectionHero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heroDescription {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: background-color 300ms;
+  border: none;
+  cursor: pointer;
+}
+.btnFull:link,
+.btnFull:visited {
+  background-color: #e67e22;
+  color: white;
+}
+
+.btnFull:hover,
+.btnFull:active {
+  background-color: #cf711f;
+}
+
+.btnOutline:link,
+.btnOutline:visited {
+  background-color: white;
+  color: #555;
+}
+
+.btnOutline:hover,
+.btnOutline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.heroImg {
+  width: 100%;
+}
+
+.marginRightSmall {
+  margin-right: 1.6rem !important;
+}
+
+.deliveredMeals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.deliveredImgs {
+  display: flex;
+}
+
+.deliveredImgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.deliveredText {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.deliveredText span {
+  color: #cf711f;
+}
+/*************************/
+/* Stikcy navigation */
+/*************************/
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.925);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+}
+
+.sticky .sectionHero {
+  margin-top: 9.6rem;
+}
+/*************************/
+/* Featured Section */
+/*************************/
+.sectionFeatured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.headingFeaturedIn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.logos img {
+  height: 3.2rem;
+}
+/*************************/
+/* How it works */
+/*************************/
+
+.sectionHow {
+  padding: 9.6rem 0;
+}
+
+/* .sectionHow div div {
+} */
+/* .headingSecond {
+} */
+
+/* .headingStepText {
+} */
+
+.StepNumber {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 1.2rem;
+}
+.StepDescription {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.StepimageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.StepimageBox::before {
+  content: "";
+  display: block;
+  width: 60%;
+  border-radius: 50%;
+  /* height: 100px; */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+
+  position: absolute;
+  z-index: -2;
+}
+
+.StepimageBox::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  /* height: 100px; */
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.stepImg {
+  width: 35%;
+}
+
+/*************************/
+/* Meals */
+/*************************/
+
+.sectionMeals {
+  padding: 9.6rem 0;
+}
+
+.meals {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.074);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meals:hover {
+  transform: translateY(-1rem);
+  transition: all 0.4s;
+  box-shadow: 0 3.4rem 5.8rem rgba(0, 0, 0, 0.05);
+}
+
+.mealTags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--veretarian {
+  background-color: #52cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.mealContent {
+  padding: 3.2rem 4.8rem;
+}
+
+.mealImg {
+  width: 100%;
+}
+
+.mealName {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.mealAtributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mealAtribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.mealIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/*************************/
+/*Testimonials and Users Gallery */
+/*************************/
+.testimonials h2 {
+  margin-top: 4.8rem;
+}
+
+.usersGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.usersGallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+
+.usersGallery img:hover {
+  transform: scale(1.1);
+}
+.testimonialHeader {
+}
+.costumerPhotoReview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.costumerReview {
+}
+.costumerReviewText {
+}
+
+.testimonialsBackground {
+  background-color: #fdf2e9;
+  padding: 9.6rem;
+}
+
+.costumerCard img {
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+.costumerCard {
+  /* padding: 1.2rem; */
+}
+
+.costumerReviewText {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.costumerReview span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #777;
+}
+
+/*************************/
+/*Testimonials and Users Gallery */
+/*************************/
+
+.sectionPricing {
+  padding: 9.6rem;
+}
+.pricingPlan {
+  border-radius: 11px;
+  width: 75%;
+}
+.pricingPlanStarter {
+  padding: 4.6rem;
+
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+}
+.pricingPlanComplete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricingPlanComplete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 4%;
+  right: -9%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
+  color: #333;
+  transform: rotate(45deg);
+}
+
+.planeName {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.planPrice {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.planPrice span {
+  margin-right: 0.8rem;
+}
+.planText {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #777;
+}
+.planHeader {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plnSingUp {
+  margin-top: 4.8rem;
+  text-align: center;
+}
+.planDetails {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 4.8rem;
+}
+.featuredIcon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.featuredTittle {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.featuredText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/*************************/
+/* CTA section */
+/*************************/
+.sectionCTA {
+  padding: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  margin-bottom: 9.6rem;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+  /* height: 50rem; */
+}
+
+.cctaImageBox {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.219),
+      rgba(230, 125, 34, 0.219)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cctaTextBox {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  margin-bottom: 3.2rem;
+  color: #2e1907;
+}
+
+.cta .headingSecond {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+
+.ctaText {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.ctaForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.ctaForm label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.ctaForm input,
+.ctaForm select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.ctaForm input::placeholder {
+  color: #aaa;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(228, 228, 228, 0.342);
+}
+
+/*************************/
+/* Footer */
+/*************************/
+
+.footer {
+  border-top: 1px solid #eee;
+  padding: 12.8rem 0;
+}
+
+.gridFooter {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footerLogo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.logoCol {
+  display: flex;
+  flex-direction: column;
+}
+.socialIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6rem;
+  margin-top: auto;
+}
+.address {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.contaacts {
+  font-style: 1.6rem;
+  line-height: 1.6;
+}
+
+.socialMedia {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.footerHeading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footerNav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footerLink:link,
+.footerLink:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: 0.3s;
+}
+
+.footerLink:hover,
+.footerLink:active {
+  color: #555;
+}
